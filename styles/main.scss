@@ -1,0 +1,142 @@
+//// Vars ////
+
+$color1: #f72585;
+$color2: #7209b7;
+$color3: #3a0ca3;
+$color4: #4361ee;
+$color5: #4cc9f0;
+
+$font1: 'Bungee Inline', cursive;
+$font2: 'Iceland', cursive;
+
+$padding: 1%;
+$margin: 2%;
+
+//// Custom Classes ////
+
+.separator{
+    margin-top: 12%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 5px;
+    box-shadow: 2px 2px 6px 1px $color5;
+}
+
+//Aligning things//
+h1,h2,footer, input, label{
+    text-align: center;
+}
+
+h1{
+    font-family: $font1;
+}
+*{
+    font-family: $font2;
+}
+
+/////////////////////
+
+#copyConvert, #copyRevert{
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/copy.svg);
+    transition-duration: 0.5s;
+    display: block;
+    margin: 6px 65%;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+#multiplier{
+    margin-left: 10%;
+    margin-top: 4%;
+    width: 100px;
+    height: 50px;
+    input{
+        width: 100%;
+        border-radius: 20px;
+        border-style: none;
+        box-shadow: 1px 1px 8px 2px $color4, -2px -2px 8px 2px $color5;
+        padding: 0px $padding;
+        outline: none;
+        transition-duration: 0.5s;
+    
+        &:hover{
+            box-shadow: 1px 1px 8px 2px $color5, -2px -2px 6px 2px $color4;
+        }
+        &:focus{
+            box-shadow: 1px 1px 8px 2px $color5, -2px -2px 6px 2px $color4, 3px 3px 10px 2px white, -1px -1px 10px 3px white;
+            background-color: #222;
+            color: $color1;
+            text-shadow: 1px 1px 4px $color5;
+        }
+    }
+}
+
+#superContainer{
+    animation: flash 1s forwards, heartBeat 0.8s forwards;
+    background-color: black;
+    #mainHeader{
+        box-shadow: 2px 2px 6px 1px $color1;
+        margin-bottom: $margin;
+        header{
+            width: 100%;
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+    h2{
+        font-size: 35px;
+    }
+    h1, h2, label{
+        padding: $padding;
+        color: $color5;
+        text-shadow: 1px 1px 3px $color2, 2px 2.2px 4px $color1;
+    }
+
+   [type=text]{
+        width: 28%;
+        border-radius: 20px;
+        border-style: none;
+        box-shadow: 1px 1px 8px 2px $color4, -2px -2px 8px 2px $color5;
+        padding: 0px $padding;
+        outline: none;
+        transition-duration: 0.5s;
+
+        &:hover{
+            box-shadow: 1px 1px 8px 2px $color5, -2px -2px 6px 2px $color4;
+        }
+        &:focus{
+            box-shadow: 1px 1px 8px 2px $color5, -2px -2px 6px 2px $color4, 3px 3px 10px 2px white, -1px -1px 10px 3px white;
+            background-color: #222;
+            color: $color1;
+            text-shadow: 1px 1px 4px $color5;
+        }
+    }
+
+    .labeltext{
+        overflow: auto;
+        border: 1px solid none;
+        background-color:white;
+        border-radius: 10px 0px;
+        box-shadow: 1px 1px 1px 1px $color1, -1px -1px 8px 1px $color5;
+        margin-top: $margin;
+        width: 30%;
+        height: 100px;
+        text-justify: auto;
+    }
+
+    footer{
+        margin-top: $margin;
+        padding: $padding;
+        font-size: 20px;
+        color: #4cc9f0;
+        text-shadow: 1px 1px 2px $color1, -1px 1px 6px $color2;
+    }
+}
+
